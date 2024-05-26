@@ -18,7 +18,7 @@ function getValue() {
     ];
     const test = allResults.toString();
     console.log(test);
-    const submit = `https://wa.me/6283145372436?text=hallo`;
+    const submit = `https://wa.me/6283145372436?text=${allResults}`;
     location.replace(submit)
     //window.open(submit, "_blank");
 }
