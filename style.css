@@ -1,0 +1,52 @@
+*,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 120vh;
+    background: linear-gradient(to bottom right, navy, violet);
+}
+.welcome {
+    margin-top: 35%;
+    text-align: center;
+    align-items: center;
+}
+.logo {
+    aspect-ratio: 1/1;
+    max-width: 40vw;
+    width: 35vw;
+    border-radius: 12px;
+}
+h1 {
+    font-weight: normal;
+    color: white;
+    font-size: 2em;
+    margin-top: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+h1 p {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+h2 {
+    margin-top: 1vw;
+    font-size: 2em;
+    color: white;
+    font-weight: normal;
+}
+.btn {
+    box-shadow: 5px 10px #1e1e1e;
+    border-radius: 12px;
+    padding: 5px;
+    color: black;
+    margin-top: 1.5vh;
+    font-size: 1em;
+    background: white;
+}
+a {
+    color: red;
+}

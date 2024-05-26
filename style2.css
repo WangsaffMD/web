@@ -1,0 +1,25 @@
+*,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 150vh;
+    background: linear-gradient(to bottom right, navy, violet);
+}
+.syarat {
+  color: white;
+  font-size: 2em;
+  margin-left: 10px;
+}
+h2{
+  font-weight: normal;
+}
+li {
+  list-style-type: "- ";
+}
+button {
+  margin: 5px;
+}
