@@ -20,7 +20,7 @@ function getValue() {
     const test = allResults.toString();
     */
     //console.log(test);
-    const submit = `https://wa.me/6283145372436?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}`;
+    const submit = `https://wa.me/6285697102235?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}`;
     location.replace(submit);
     //window.open(submit, "_blank");
 }
