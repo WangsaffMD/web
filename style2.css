@@ -20,6 +20,95 @@ h2{
 li {
   list-style-type: "- ";
 }
+button:hover{
+  background: black;
+  color: white;
+  
+}
 button {
   margin: 5px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
+input {
+  border-radius: 5px;
+  font-size: 1.5em;
+  max-width: 80vw;
+  width: 53vw;
+  margin: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.container h1{
+  color: white;
+  text-align: center;
+}
+
+.d1{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.role {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+.role::-webkit-details-marker {
+  display: none;
+}
+
+.role:after{
+  content: "\002B";
+}
+
+.d1[open] .role{
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+.d1[open] .role:after{
+  content: "\00D7";
+}
+
+.d1[open] div{
+  padding: .5em 1em;
+}
+
+.d2{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.condition {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+.condution::-webkit-details-marker {
+  display: none;
+}
+
+.condition:after{
+  content: "\002B";
+}
+
+.d2[open] .condition{
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+.d2[open] .condition:after{
+  content: "\00D7";
+}
+
+.d2[open] div{
+  padding: .5em 1em;
 }

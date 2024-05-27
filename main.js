@@ -1,12 +1,13 @@
 function getValue() {
-    let result1 = document.getElementById("name").value;
-    let result2 = document.getElementById("umur").value;
-    let result3 = document.getElementById("kota").value;
-    let result4 = document.getElementById("WR").value;
-    let result5 = document.getElementById("RR").value;
-    let result6 = document.getElementById("rank").value;
-    let result7 = document.getElementById("role").value;
-    let result8 = document.getElementById("ID").value;
+    let nama = document.getElementById("name").value;
+    let umur = document.getElementById("umur").value;
+    let kota = document.getElementById("kota").value;
+    let wr = document.getElementById("WR").value;
+    let rr = document.getElementById("RR").value;
+    let rank = document.getElementById("rank").value;
+    let role = document.getElementById("role").value;
+    let id = document.getElementById("ID").value;
+    /*
     let allResults = [
         `nama : ${result1}`,
         `umur : ${result2}`,
@@ -17,8 +18,9 @@ function getValue() {
         `ID : ${result8}`
     ];
     const test = allResults.toString();
+    */
     console.log(test);
-    const submit = `https://wa.me/6285697102235?text=${allResults}`;
-    location.replace(submit)
+    const submit = `https://wa.me/6283145372436?text=Nama : ${nama}%aUmur : ${umur}%2aAsal : ${kota}%3aWinrate : ${wr}%2aRank Tertinggi : ${rr}%2aRank Saat Ini : ${rank}%2aRole : ${role}%2aID ML : ${id}`;
+    location.replace(submit);
     //window.open(submit, "_blank");
 }

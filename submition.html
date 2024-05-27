@@ -8,20 +8,30 @@
         <link rel="stylesheet" href="style2.css" />
     </head>
     <body>
-        <div class="syarat">
-            <h2>OPEN RECRUITMEN MEMBER (NEXT LEVEL)</h2>
-            <p>Need Role :</p>
-            <li>EXP Lane</li>
-            <li>Mid Lane</li>
-            <li>Gold Lane</li>
-            <li>Jungler</li>
-            <li>Roamer</li>
-            <p>Syarat & Ketentuan :</p>
-            <li>Pure Role</li>
-            <li>Ex Honor ★40+</li>
-            <li>Min Umur 15+</li>
-            <li>Good Atitude</li>
+        <div class="container">
+            <h1>OPEN RECUITMENTS MEMBER
+            (NEXT LEVEL)</h1>
+            <details class="d1">
+                <summary class="role">Need Role</summary>
+                <div>
+                    <li>EXP Lane</li>
+                    <li>Gold Lane</li>
+                    <li>Mid Lane</li>
+                    <li>Jungler</li>
+                    <li>Roamer</li>
+                </div>
+            </details>
+           <details class="d2">
+             <summary class="condition">Syarat & Ketentuan</summary>
+                <div>
+                  <li>Pure Role</li>
+                  <li>Ex Honor ★40+</li>
+                  <li>Min Umur 15+</li>
+                  <li>Good Atitude</li>
+                </div>
+           </details>
         </div>
+      <center>
         <div class="form">
             <input type="text" placeholder="Nama" id="name" required="" />
             <br />
@@ -48,10 +58,10 @@
             <input type="text" placeholder="ROLE" id="role" required="" />
             <br />
             <input type="number" placeholder="ID ML" id="ID" required="" />
-        </div>
         <div>
             <button onclick="getValue()" class="btn">Join Squad</button>
             <script src="main.js"></script>
         </div>
+      </center>
     </body>
 </html>
