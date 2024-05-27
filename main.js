@@ -19,8 +19,8 @@ function getValue() {
     ];
     const test = allResults.toString();
     */
-    // console.log(test);
-    const submit = `https://wa.me/6283145372436?text=Nama : ${nama}%aUmur : ${umur}%2aAsal : ${kota}%3aWinrate : ${wr}%2aRank Tertinggi : ${rr}%2aRank Saat Ini : ${rank}%2aRole : ${role}%2aID ML : ${id}`;
+    //console.log(test);
+    const submit = `https://wa.me/6283145372436?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}`;
     location.replace(submit);
     //window.open(submit, "_blank");
 }
