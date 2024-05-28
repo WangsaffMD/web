@@ -53,6 +53,7 @@ a {
     color: red;
 }
 footer {
+  font-weight: 900;
   color: magenta;
   padding-top: 2.6%;
   height: 4%;
