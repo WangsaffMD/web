@@ -8,7 +8,14 @@ function submitData() {
     let role = document.getElementById("role").value;
     let id = document.getElementById("ID").value;
 
-    if (nama === "" || umur === "" || kota === "" || wr === "" || rr === "" || role === "") {
+    if (
+        nama === "" ||
+        umur === "" ||
+        kota === "" ||
+        wr === "" ||
+        rr === "" ||
+        role === ""
+    ) {
         alert("Please fill in all the fields.");
     } else if (!isNaN(id)) {
         alert("ID must be a number.");
@@ -30,7 +37,14 @@ function submitData2() {
     let role = document.getElementById("role").value;
     let id = document.getElementById("ID").value;
 
-    if (nama === "" || umur === "" || kota === "" || wr === "" || rr === "" || role === "") {
+    if (
+        nama === "" ||
+        umur === "" ||
+        kota === "" ||
+        wr === "" ||
+        rr === "" ||
+        role === ""
+    ) {
         alert("Please fill in all the fields.");
     } else if (!isNaN(id)) {
         alert("ID must be a text.");
