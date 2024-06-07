@@ -47,7 +47,7 @@ function submitData2() {
     ) {
         alert("Please fill in all the fields.");
     } else if (!isNaN(id)) {
-        alert("ID must be a text.");
+        alert("ID must be a number.");
     } else if (!isNaN(rank) && !isNaN(rank.split(" ")[1])) {
         alert("Rank must be a number followed by text.");
     } else {
