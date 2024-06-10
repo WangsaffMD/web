@@ -30,7 +30,7 @@ function submitData(phoneNumber) {
 function redirectOnRefresh(subdomain, maindomain) {
   window.addEventListener('beforeunload', function() {
     if (window.location.hostname!== subdomain) {
-      window.history.replaceState({}, '', 'https://' + maindomain);
+      window.history.replaceState({}, '', 'https://nxl-recruitments.vercel.app/' + maindomain);
     }
   });
 }
