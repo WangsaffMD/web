@@ -39,7 +39,7 @@
             <br />
             <input type="text" placeholder="asal kota" id="kota" required="" />
             <br />
-            <input type="text" placeholder="Winrate" id="WR" required="" />
+            <input type="number" placeholder="Winrate" id="WR" required="" />
             <br />
             <input
                 type="text"
@@ -59,8 +59,11 @@
             <br />
             <input type="number" placeholder="ID ML" id="ID" required="" />
         <div>
-            <button onclick="submitData()" class="btn">Admin 1</button>
-            <button onclick="submitData2()" class="btn">Admin 2</button>
+            <button onclick="submitData('6285697102235')" class="btn">Admin 1</button>
+            <button onclick="submitData('6283145273436')" class="btn">Admin 2</button>
+            <script>
+  redirectOnRefresh('submition.html', 'index.html');
+</script>
             <script src="main.js"></script>
         </div>
       </center>
