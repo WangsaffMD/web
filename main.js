@@ -23,14 +23,10 @@ function submitData(phoneNumber) {
         return;
     }
 
-    let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}`;
-    location.replace(url);
-}
-
-function redirectOnRefresh(subdomain, maindomain) {
-  window.addEventListener('beforeunload', function() {
-    if (window.location.hostname!== subdomain) {
-      window.history.replaceState({}, '', 'https://nxl-recruitments.vercel.app/' + maindomain);
+    if (rr >= "50") {
+        let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0aMasuk NXL1`;
+    } else {
+        let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0aMasuk NXL2`;
     }
-  });
+    location.replace(url);
 }
