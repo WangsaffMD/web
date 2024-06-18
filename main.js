@@ -23,10 +23,6 @@ function submitData(phoneNumber) {
         return;
     }
 
-    if (rr >= "50") {
-        let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0aMasuk NXL1`;
-    } else {
-        let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0aMasuk NXL2`;
-    }
+    let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0a`;
     location.replace(url);
 }
