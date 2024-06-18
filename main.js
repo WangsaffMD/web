@@ -8,7 +8,7 @@ function submitData(phoneNumber) {
     let role = document.getElementById("role").value;
     let id = document.getElementById("ID").value;
 
-    if (!nama ||!umur ||!kota ||!wr ||!rr ||!rank ||!role ||!id) {
+    if (!nama || !umur || !kota || !wr || !rr || !rank || !role || !id) {
         alert("isi semua forms yang disediakan");
         return;
     }
@@ -23,6 +23,14 @@ function submitData(phoneNumber) {
         return;
     }
 
-    let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0a`;
+     let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0a`;
+
+    if (rr >= "50") {
+        url += `Masuk NXL1`;
+    } else {
+        url += `Masuk NXL2`;
+    }
     location.replace(url);
+    // let url = `https://wa.me/${phoneNumber}?text=Nama : ${nama}%0aUmur : ${umur}%0aAsal : ${kota}%0aWinrate : ${wr}%0aRank Tertinggi : ${rr}%0aRank Saat Ini : ${rank}%0aRole : ${role}%0aID ML : ${id}%0a`;
+    // location.replace(url);
 }
